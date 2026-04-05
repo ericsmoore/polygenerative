@@ -1,3 +1,12 @@
+/* https://processing.org/tutorials/overview
+
+Processing 00
+2026-04-02
+
+My simple first sketches in processing utilizing lines and random();
+
+esmoore */
+
 void setup() {
   size(400,400);
   background(192,64,0);
@@ -16,7 +25,8 @@ void draw() {
 
   // saveFrame();
 
-  /* background(192,64,0);
+  /*
+  background(192,64,0);
   for(int n = 0; n < 4; n++){
     float r = 50 + n*50;
   
