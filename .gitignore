@@ -1,6 +1,7 @@
 **/*.tif
+**/*.png
 
-!gallery/
-!gallery/**
+**/out
 
 .DS_Store
+compile_flags.txt
