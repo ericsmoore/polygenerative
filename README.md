@@ -1,3 +1,3 @@
 # PolyGenerative
 
-A WIP *'Polyglot' Generative*/Algorithmic Art Project
+A WIP *'Polyglot'* Art Project
