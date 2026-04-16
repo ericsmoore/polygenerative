@@ -1,7 +1,6 @@
 **/*.tif
 **/*.png
-
-**/out
+**/*.out
 
 .DS_Store
 compile_flags.txt

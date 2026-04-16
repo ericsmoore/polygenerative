@@ -5,7 +5,7 @@ LIBS = $(shell pkg-config --libs cairo)
 SKETCH ?= cpp00
 
 SRC = $(SKETCH)/$(SKETCH).cpp
-OUT_DIR = $(SKETCH)/out
+OUT_DIR = $(SKETCH)
 OUT = $(OUT_DIR)/a.out
 
 build:

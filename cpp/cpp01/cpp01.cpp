@@ -1,3 +1,10 @@
+/* C++ Cairo 01
+2026-04-16
+
+Bubble Sort: A simple but inefficient comparison-based sorting algorithm. Named
+for the way that large elements 'bubble' up to the top of the list.
+
+esmoore */
 #include <cairo/cairo.h>
 #include <cstdlib>
 #include <ctime>
@@ -8,7 +15,7 @@ constexpr int W = 800;
 constexpr int H = 800;
 constexpr int MW = 100;
 constexpr int MH = 200;
-constexpr int SIZE = 50;
+constexpr int SIZE = 100;
 
 constexpr int CW = W - 2 * MW;
 constexpr int BW = CW / SIZE;
@@ -17,11 +24,11 @@ void draw_event(std::vector<int> &arr, cairo_t *cr, int i, bool swapped) {
   int dot_x = MW + BW * i + BW / 2;
   int dot_y = H - MH;
   if (swapped) {
-    cairo_set_source_rgba(cr, 0.95, 0.85, 0.6, 0.8);
+    cairo_set_source_rgba(cr, 0.95, 0.85, 0.6, 0.7);
     cairo_arc(cr, dot_x, dot_y - arr[i], 10, 0, 2 * M_PI);
     cairo_fill(cr);
   } else {
-    cairo_set_source_rgba(cr, 0.95, 0.5, 0.5, 0.5);
+    cairo_set_source_rgba(cr, 0.95, 0.5, 0.5, 0.4);
     cairo_arc(cr, dot_x, dot_y - arr[i + 1], 10, 0, 2 * M_PI);
     cairo_fill(cr);
   }
