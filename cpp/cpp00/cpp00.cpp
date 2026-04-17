@@ -5,6 +5,7 @@ First sketch in C++ and first time messing with vector graphics. Done in one
 day over an hour or two.
 
 esmoore */
+
 #include <cairo/cairo.h>
 #include <cmath>
 #include <cstdlib>
