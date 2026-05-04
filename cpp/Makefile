@@ -4,16 +4,6 @@ LIBS = $(shell pkg-config --libs cairo)
 
 SKETCH ?= cpp00
 
-SRC = $(SKETCH)/$(SKETCH).cpp
-OUT_DIR = $(SKETCH)
-OUT = $(OUT_DIR)/a.out
-
-build:
-	mkdir -p $(OUT_DIR)
-	$(CXX) $(CXXFLAGS) $(SRC) -o $(OUT) $(LIBS)
-
-run: build
-	cd $(OUT_DIR) && ./a.out
-
-clean:
-	rm -rf cpp*/build
+run:
+	$(CXX) $(CXXFLAGS) $(SKETCH)/$(SKETCH).cpp -o $(SKETCH)/a.out $(LIBS)
+	@cd $(SKETCH) && ./a.out
